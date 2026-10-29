@@ -185,6 +185,11 @@ export const preferenceDefinitions: Record<string, PreferenceDefinition> = {
     "label": "preferences.editor.misc.autoCheck",
     "notes": "preferences.explanations.taskCascade"
   },
+  editorLineNumbers: {
+    category: 'editor',
+    label: 'preferences.editor.misc.editorLineNumbers',
+    notes: 'preferences.editor.misc.editorLineNumbersNotes'
+  },
   "sourceCodeLineNumbers": {
     "category": "editor",
     "label": "preferences.editor.misc.sourceCodeLineNumbers"

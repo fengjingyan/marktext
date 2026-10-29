@@ -564,6 +564,8 @@
         "autoCheck": "Lier les tâches parentes et leurs sous-tâches",
         "autoNormalizeLineEndings": "Normaliser automatiquement les fins de ligne en LF à l'ouverture",
         "wrapCodeBlocks": "Retour à la ligne des blocs de code",
+        "editorLineNumbers": "Afficher les numéros de ligne",
+        "editorLineNumbersNotes": "Numérote les lignes de texte visibles dans l’éditeur. Les lignes repliées partagent un numéro ; le Markdown masqué et les séparateurs vides ne sont pas comptés. La numérotation des blocs de code se règle séparément.",
         "sourceCodeLineNumbers": "Afficher les numéros de ligne en mode code source"
       }
     },

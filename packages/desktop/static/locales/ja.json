@@ -564,6 +564,8 @@
         "autoCheck": "親子タスクのチェックを連動",
         "autoNormalizeLineEndings": "開くときに改行コードを自動的に LF へ統一",
         "wrapCodeBlocks": "コードブロックを折り返し",
+        "editorLineNumbers": "行番号を表示",
+        "editorLineNumbersNotes": "エディターの表示テキスト行に番号を付けます。折り返した行は同じ番号を使い、非表示の Markdown 記号や段落間の空行は数えません。コードブロックの行番号は個別に設定します。",
         "sourceCodeLineNumbers": "ソースコードモードで行番号を表示"
       }
     },

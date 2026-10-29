@@ -213,6 +213,13 @@
           :on-change="(value) => onSelectChange('hideLinkPopup', value)"
         />
         <bool
+          id="setting-editorLineNumbers"
+          :description="preferenceLabel('editorLineNumbers')"
+          :notes="preferenceNotes('editorLineNumbers')"
+          :bool="editorLineNumbers"
+          :on-change="(value) => onSelectChange('editorLineNumbers', value)"
+        />
+        <bool
           id="setting-sourceCodeLineNumbers"
           :description="preferenceLabel('sourceCodeLineNumbers')"
           :bool="sourceCodeLineNumbers"
@@ -272,6 +279,7 @@ const {
   hideQuickInsertHint,
   hideLinkPopup,
   autoCheck,
+  editorLineNumbers,
   sourceCodeLineNumbers,
   autoNormalizeLineEndings,
   wrapCodeBlocks,

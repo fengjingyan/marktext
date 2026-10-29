@@ -133,6 +133,11 @@
     "type": "boolean",
     "default": true
   },
+  "editorLineNumbers": {
+    "description": "Editor--Show line numbers in the rendered editor",
+    "type": "boolean",
+    "default": false
+  },
   "sourceCodeLineNumbers": {
     "description": "Editor--Show line numbers in source code mode",
     "type": "boolean",

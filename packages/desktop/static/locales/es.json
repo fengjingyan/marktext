@@ -564,6 +564,8 @@
         "autoCheck": "Vincular tareas principales y subtareas",
         "autoNormalizeLineEndings": "Normalizar automáticamente los finales de línea a LF al abrir",
         "wrapCodeBlocks": "Ajustar bloques de código",
+        "editorLineNumbers": "Mostrar números de línea",
+        "editorLineNumbersNotes": "Numera las líneas de texto visibles del editor. Las líneas ajustadas comparten un número; no se cuentan el Markdown oculto ni las líneas vacías entre párrafos. La numeración de los bloques de código se configura por separado.",
         "sourceCodeLineNumbers": "Mostrar números de línea en el modo código fuente"
       }
     },

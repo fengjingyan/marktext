@@ -564,6 +564,8 @@
         "autoCheck": "Link parent and child tasks",
         "autoNormalizeLineEndings": "Auto-normalize line endings to LF on open",
         "wrapCodeBlocks": "Wrap code blocks",
+        "editorLineNumbers": "Show line numbers",
+        "editorLineNumbersNotes": "Number visible text lines in the editor. Wrapped lines share one number; hidden Markdown and blank separators are not counted. Code block line numbers are controlled separately.",
         "sourceCodeLineNumbers": "Show line numbers in source code mode"
       }
     },

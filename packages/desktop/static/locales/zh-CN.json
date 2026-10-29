@@ -564,6 +564,8 @@
         "autoCheck": "联动勾选父子任务",
         "autoNormalizeLineEndings": "打开时自动将行尾规范化为 LF",
         "wrapCodeBlocks": "换行代码块",
+        "editorLineNumbers": "显示行号",
+        "editorLineNumbersNotes": "在编辑区左侧为可见文本行编号。自动折行沿用同一行号，不计隐藏的 Markdown 标记和段落间的空行。代码块行号单独设置。",
         "sourceCodeLineNumbers": "在源码模式中显示行号"
       }
     },

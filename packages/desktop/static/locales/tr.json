@@ -564,6 +564,8 @@
         "autoCheck": "Üst ve alt görevlerin işaretlerini bağla",
         "autoNormalizeLineEndings": "Açılışta satır sonlarını LF'ye otomatik normalleştir",
         "wrapCodeBlocks": "Kod bloklarını kaydır",
+        "editorLineNumbers": "Satır numaralarını göster",
+        "editorLineNumbersNotes": "Düzenleyicideki görünür metin satırlarını numaralandırır. Kaydırılan satırlar aynı numarayı paylaşır; gizli Markdown ve paragraflar arasındaki boş satırlar sayılmaz. Kod bloğu satır numaraları ayrı ayarlanır.",
         "sourceCodeLineNumbers": "Kaynak kod modunda satır numaralarını göster"
       }
     },

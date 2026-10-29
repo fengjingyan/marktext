@@ -49,6 +49,7 @@ export interface UserPreferences extends RecoveryPreferences {
   codeFontSize: number
   codeFontFamily: string
   codeBlockLineNumbers: boolean
+  editorLineNumbers: boolean
   sourceCodeLineNumbers: boolean
   trimUnnecessaryCodeBlockEmptyLines: boolean
   autoPairBracket: boolean

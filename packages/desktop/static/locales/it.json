@@ -564,6 +564,8 @@
         "autoCheck": "Collega attività principali e secondarie",
         "autoNormalizeLineEndings": "All’apertura converte automaticamente i caratteri di fine riga in LF",
         "wrapCodeBlocks": "Nei blocchi di codice è possibile andare a capo (word wrap)",
+        "editorLineNumbers": "Mostra i numeri di riga",
+        "editorLineNumbersNotes": "Numera le righe di testo visibili nell’editor. Le righe mandate a capo condividono un numero; il Markdown nascosto e le righe vuote tra paragrafi non vengono contati. La numerazione nei blocchi di codice si imposta separatamente.",
         "sourceCodeLineNumbers": "Mostra i numeri di linea in modalità codice-sorgente"
       }
     },

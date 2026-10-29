@@ -2,13 +2,23 @@
   <div
     class="editor-wrapper"
     :class="[
-      { typewriter: typewriter, focus: focus, source: sourceCode, 'viewer-open': viewerOpen }
+      {
+        typewriter: typewriter,
+        focus: focus,
+        source: sourceCode,
+        'viewer-open': viewerOpen,
+        'with-line-numbers': showEditorLineNumbers
+      }
     ]"
     :dir="textDirection"
   >
     <div
       ref="editorRef"
       class="editor-component"
+    />
+    <editor-line-number-gutter
+      v-if="showEditorLineNumbers && editor"
+      :host="editor.domNode"
     />
     <media-viewer
       ref="mediaViewer"
@@ -120,6 +130,7 @@ import { useCommandCenterStore } from '@/store/commandCenter'
 import { exportStyledHTML, type HeaderFooterPart } from '@/util/exportHtml'
 import { applyCursor, isIndexCursor } from '@/util/cursor'
 import EditorSearch from '../search/index.vue'
+import EditorLineNumberGutter from './editorLineNumbers.vue'
 import MediaViewer from '../mediaViewer/index.vue'
 import bus from '@/bus'
 import { DEFAULT_EDITOR_FONT_FAMILY, DEFAULT_CODE_FONT_FAMILY } from '@/config'
@@ -201,6 +212,7 @@ const {
   codeFontSize,
   codeFontFamily,
   codeBlockLineNumbers,
+  editorLineNumbers,
   trimUnnecessaryCodeBlockEmptyLines,
   editorFontFamily,
   hideQuickInsertHint,
@@ -232,6 +244,7 @@ const { currentFile, tabs } = storeToRefs(editorStore)
 const sourceCode = computed(() => sourceCodePreference.value && !currentFile.value?.readOnly)
 const typewriter = computed(() => typewriterPreference.value && !currentFile.value?.readOnly)
 const focus = computed(() => focusPreference.value && !currentFile.value?.readOnly)
+const showEditorLineNumbers = computed(() => editorLineNumbers.value && !sourceCode.value && !currentFile.value?.readOnly)
 let loadingContent = false
 let releaseViewState: (() => void) | undefined
 let renderedDocumentId: string | null = null
@@ -2047,6 +2060,11 @@ onBeforeUnmount(() => {
   isolation: isolate;
   flex: 1;
   color: var(--editorColor);
+}
+
+.editor-wrapper.with-line-numbers .mu-container {
+  /* Leave room for the block handle between the gutter and the text. */
+  padding-left: 98px;
 }
 
 .ag-insert-table-dialog {

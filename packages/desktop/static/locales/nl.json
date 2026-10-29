@@ -564,6 +564,8 @@
         "autoCheck": "Bovenliggende taken en subtaken koppelen",
         "autoNormalizeLineEndings": "Regeleindes automatisch normaliseren naar LF bij openen",
         "wrapCodeBlocks": "Codeblokken terugloopbaar",
+        "editorLineNumbers": "Regelnummers tonen",
+        "editorLineNumbersNotes": "Nummert zichtbare tekstregels in de editor. Afgebroken regels delen een nummer; verborgen Markdown en lege scheidingsregels tellen niet mee. Regelnummers in codeblokken worden apart ingesteld.",
         "sourceCodeLineNumbers": "Regelnummers tonen in broncodeweergave"
       }
     },

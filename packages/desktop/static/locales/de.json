@@ -564,6 +564,8 @@
         "autoCheck": "Über- und Unteraufgaben gemeinsam markieren",
         "autoNormalizeLineEndings": "Zeilenenden beim Öffnen automatisch auf LF normalisieren",
         "wrapCodeBlocks": "Code-Blöcke umbrechen",
+        "editorLineNumbers": "Zeilennummern anzeigen",
+        "editorLineNumbersNotes": "Nummeriert sichtbare Textzeilen im Editor. Umgebrochene Zeilen teilen sich eine Nummer; ausgeblendetes Markdown und leere Absatztrenner werden nicht gezählt. Zeilennummern in Codeblöcken werden separat eingestellt.",
         "sourceCodeLineNumbers": "Zeilennummern im Quellcode-Modus anzeigen"
       }
     },
